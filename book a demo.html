@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadIQ | Book a demo
+    </title>
+    <style>
+        * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #063C4D;
+}
+
+a{
+text-decoration: none;
+color: #063C4D;
+padding: 20px 35px;
+border-radius: 30px;
+font-size: 18px;
+margin-right: 20px;
+}
+.base-btn{
+background-color: #ffd265;
+border: none;
+
+}
+
+.ghost-btn{
+border: .2px solid rgb(215, 215, 215); 
+color: #063C4D; 
+}
+
+.ghost-btn:hover{
+background-color: #fdc84d;
+transition: 0.5s;
+}
+
+.base-btn:hover{
+background-color: #efb735;
+transition: 0.5s;
+}
+#ghost-banner-btn, #ghost-baner-btn{
+color: #fff;
+}
+
+#ghost-banner-btn:hover{
+color: #063C4D;
+}
+#ghost-baner-btn:hover{
+color: #063C4D;
+}
+
+
+/* ===================== FORM SECTION =================== */
+
+#form-background{
+  background-image: url(https://assets.website-files.com/60819f9be381394642b5659e/6081b810fbae85943d9fd9c7_leadiq-background-testimonial-2.svg), url(https://assets.website-files.com/60819f9be381394642b5659e/6081b80de8f2326eb44d6bf5_leadiq-background-testimonial-1.svg);
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  align-items: center;
+  background-position: 60% -5%, 112% 85%;
+  background-size: 500px 400px;
+}
+.error{
+color: red;
+font-size: 12px;
+margin-bottom: 5px;
+display: none;
+}
+#col{
+  height: 750px;
+  width: 500px;
+  background-color: #063C4D;
+  position: absolute;
+  z-index: -2;
+  left: 60%;
+}
+#contact-form{
+  padding: 40px;
+}
+#form>h2{
+  font-size: 24px;
+  color: #063C4D;
+}
+
+#form>label{
+  font-size: 15px;
+  color: #063C4D;
+  
+}
+#form>label>span{
+  color: red;
+}
+
+#form>input{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 35px;
+  background-color: rgb(236, 249, 255);
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#form>select{
+  width: 93%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 36px;
+  background-color: rgb(236, 249, 255);
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#form>button{
+  margin-top: 20px;
+  margin-bottom: 18px;
+  background: #ffd265;
+  border-color: #ffd265;
+  color: #063c4d;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3px;
+  padding: 12px 24px;
+}
+
+#form{
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#form-desc{
+  width: 100%;
+  padding: 30px;
+}
+#form-heading{
+  font-size: 2em;
+}
+
+#heading-form{
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+#heading-form+p{
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+#heading-form+p+p{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00d586;
+  font-weight: 600;
+}
+
+#list{
+  margin-top: 30px;
+  padding: 0;
+  margin-left: 20px;
+  list-style-type: none;
+  width: 350px;
+}
+.tick{
+  background: url('https://assets.website-files.com/60819f9be381394642b5659e/628bac72a84c6697dbf8146e_check-green.svg') no-repeat left top;
+  background-size: 20px;
+  height: 34px;
+  padding-top: 2px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #063C4D;
+  font-weight: 600;
+}
+
+#header{
+  margin-bottom: 180px;
+}
+
+
+/* ============= STRATAGY ============== */
+
+#strategy{
+  background-color: #f0fff9;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-bottom: 100px;
+}
+
+#strategy>h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#strategy>p{
+  font-size: 18px;
+  color: grey;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+#text-hold{
+  padding: 50px;
+  /* padding-right: 80px; */
+  width: 100%;
+}
+
+#flex{
+  display: flex;
+  gap: 30px;
+}
+
+.experience{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.exp-text{
+  font-size: 18px;
+  color: grey;
+  line-height: 25px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.img-icon{
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-icon>img{
+  width: 50px;
+}
+
+#feat-img{
+  background-image: url(https://assets.website-files.com/60819f9be381394642b5659e/6081b42d78a93f84724ea09f_leadiq-activities-background-1.svg), url(https://assets.website-files.com/60819f9be381394642b5659e/6081b42dfc784618c92acce7_leadiq-activities-background-2.svg);
+  background-position: 5% 95%, 110% 10%;
+  background-repeat: no-repeat;
+}
+
+#feat-img>img{
+  width: 100%;
+}
+
+
+/* ================= TOP SALES TEAM =================== */
+
+#top-sale-team{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+#heading-hold{
+  width: 40%;
+  padding-left: 25px;
+}
+
+#heading-hold>h2{
+  width: 80%;
+  
+}
+
+#comp-logo-wrap{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-left: 80px;
+}
+#comp-logo-holder>img{
+  width: 50px;
+}
+
+/* ================= CROUSER SECTION ============== */
+
+#crouser-background {
+  background-image: url(https://assets.website-files.com/60819f9be381394642b5659e/6081b80de8f2326eb44d6bf5_leadiq-background-testimonial-1.svg), url(https://assets.website-files.com/60819f9be381394642b5659e/6081b810fbae85943d9fd9c7_leadiq-background-testimonial-2.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 100% 50%;
+  margin-bottom: 150px;
+}
+
+#crouser-holder{
+  width: 90%;
+  margin: auto;
+}
+
+.crouser{
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-radius: 30px;
+  padding: 80px 50px;
+  align-items: center;
+}
+
+#crouser-img-holder{
+  height: auto;
+  width: 200%;
+  padding: 20px;
+}
+
+.couser-img-div{
+  background-color: #eafff7;
+  border-radius: 20px;
+}
+
+.couser-img-div+div>h1{
+  font-size: 25px;
+  margin: 20px 0px;
+  line-height: 35px;
+}
+
+#signature{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+#avatar>img{
+  width:80px;
+}
+.designation{
+  font-size: 22px;
+  color: #063C4D;
+}
+.designation>p{
+  font-weight: bold;
+  color: #576F76;
+  font-size: 20px;
+}
+.green-font{
+  color: #00d586;
+  font-weight: bold;
+}
+
+
+/* ====================== BANNER ===================== */
+
+.page-banner{
+
+display: flex;
+background-image: url(https://assets.website-files.com/60819f9be381394642b5659e/6081c44063e24051a3c11e4d_leadiq-leader-background-2.svg), url(https://assets.website-files.com/60819f9be381394642b5659e/6081c4401f9db9638f7e83ed_leadiq-leader-background-1.svg);
+background-repeat: no-repeat;
+width: 100%;
+background-color: #063C4D;
+height: 80vh;
+background-position: 0% 0%, 100% 100%;
+align-items: center;
+margin-bottom: 100px;
+}
+
+.page-banner>div{
+text-align: center;
+width: 50%;
+margin: auto;
+}
+.page-banner>div>h2{
+font-size: 35px;
+color: #fff;
+margin-bottom: 60px;
+line-height: 60px;
+}
+
+#banner2{
+margin-top: 120px;
+margin-bottom: 80px;
+}
+
+/* ====================== BOOK DEMO SECTION ===================== */
+
+#book-demo-sec{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+padding: 30px 0px;
+margin-bottom: 50px;
+}
+
+/* ====================== FOOTER SECTION ===================== */
+
+footer{
+display: grid;
+grid-template-columns: .4fr 1fr .4fr ;
+color: #576F76;
+font-size: 16px;
+justify-content: space-around;
+padding: 20px;
+padding-bottom: 40px;
+}
+#part-1{
+display: flex;
+align-items: center;
+}
+
+#part-1>p{
+color: #576F76;
+}
+#part2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#part2>a{
+font-size: 16px;
+color: #576F76;
+padding: 10px;
+margin-left: 10px;
+}
+
+#part2>a:hover{
+color: #02B389;
+}
+
+#part3{
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: center;
+}
+
+#part3>div{
+/* padding: 5px; */
+background-color: #0678E9;
+border-radius: 50%;
+width: 35px;
+height: 35px;
+}
+#part3>div>a{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.social-icon{
+position: relative;
+width: 20px;
+height: 15px;
+right: 17px;
+bottom: 10px;
+}
+
+#part3>div:nth-child(2){
+background-color:  #1EA1F2;
+}
+
+#part3>div:nth-child(3){
+background-color:  #0766C1;
+}
+  
+#part3>div:nth-child(4){
+background-color: red;
+}
+    </style>
+</head>
+<body>
+    <div id="col"></div>
+    <div id="header">
+        
+        <div id="form-background">
+            
+            <div id="form-desc">
+                <h2 id="heading-form">Experience how LeadIQ boosts prospecting efficiently.</h2>
+                <p>We’ve got a team of prospecting experts ready to help you hit revenue targets, support your team, and build better relationships with buyers.</p>
+                <p>WHAT WE’LL DISCOVER TOGETHER</p>
+                <ul id="list">
+                    <li class="tick">
+                        What’s working, or not working, with your prospecting team.</li>
+                    <li class="tick">
+                        How the best companies in the world structure outbound processing workflows.
+                    </li>
+                    <li class="tick">
+                        How LeadIQ can help.
+                    </li>
+                </ul>
+            </div>
+            <div id="contact-form">
+                
+                <form id="form">
+                    <h2>Book a demo</h2>
+                    <label for="f-name">First Name <span>*</span></label>
+<br>                    
+                    <input id="inp1" type="text">
+                    <p class="error" id="err1">Please complete this required field.</p>
+<br>
+                    <label for="l-name">Last name <span>*</span></label>
+<br>
+                    <input id="inp2" type="text">
+                    <p class="error" id="err2">Please complete this required field.</p>
+<br>
+                    <label for="work-email">Work Email <span>*</span></label>
+<br>
+                    <input id="inp3" type="text">
+                    <p class="error" id="err3">Please complete this required field.</p>
+<br>
+                    <label for="phone">Phone Number <span>*</span></label>
+<br>
+                    <input id="inp4" type="text">
+                    <p class="error" id="err4">Please complete this required field.</p>
+<br>
+                    <label for="c-name">Company Name <span>*</span></label>
+<br>
+                    <input id="inp5" type="text">
+                    <p class="error" id="err5">Please complete this required field.</p>
+<br>
+                    <label for="role">Role <span>*</span></label>
+<br>
+                    <select id="inp6">
+                        <option value="Please Select">Please Select</option>
+                        <option value="Closer">Closer (AE, AM, etc.)</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Sales Leadership">Sales Leadership</option>
+                        <option value="Sales Development">Sales Development</option>
+                        <option value="Revenue Operations">Revenue Operations</option>
+                        <option value="Qualifier">Qualifier (SDR, BDR, etc.)</option>
+                    </select>
+                    <p class="error" id="err6">Please complete this required field.</p>
+<br>
+                    <button id="connect">Let's Connect</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="strategy">
+        <h2>Strategize with us</h2>
+        <p>This isn’t a boring old product demo. Here’s why you should setup some time to strategize with us:</p>
+        <div id="flex">
+            <div id="text-hold">
+                <div class="experience">
+                    <div class="img-icon">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/62a249185e9996ecf9467478_check-out-02.svg" alt="">
+                    </div>
+                    <div class="exp-text">
+                        You’ll get a customized buying experience.
+                    </div>
+                </div>
+    
+                <div class="experience">
+                    <div class="img-icon">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b0396fa45686e75d2ecc_leadiq-activities-icon-enriches.svg" alt="">
+                    </div>
+                    <div class="exp-text">
+                        We’ll set you up with a pilot program so your team can try us out on their own time.
+                    </div>
+                </div>
+    
+                <div class="experience">
+                    <div class="img-icon">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/62a22f74ac113405858b8bd0_check-mark.svg" alt="">
+                    </div>
+                    <div class="exp-text">
+                        Worst-case scenario, you’ll be able to book meetings for free.
+                    </div>
+                </div>
+                <a href="./bookdemo.html" class="base-btn">Book a demo</a>
+            </div>
+    
+            <div id="feat-img">
+                <img src="https://assets.website-files.com/60819f9be381394642b5659e/61681bbedd3fc2974173a5c8_LeadIQ-Integrations%202.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="top-sale-team">
+        <div id="heading-hold">
+            <h2>
+                Top sales teams have adopted
+                the LeadIQ way
+            </h2>
+        </div>
+        <div id="comp-logo-wrap">
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4aaca47a037_Clari-01.svg" alt="">
+            </div>
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc45bcd479f25_leadiq-logo-showpad.svg" alt="">
+            </div>
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4260147a03f_walkme-client-logo-03.svg" alt="">
+            </div>
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4431847a039_Segment-client-logo-04.svg" alt="">
+            </div>
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4404a479f28_leadiq-logo-sitecore.svg" alt="">
+            </div>
+            <div class="comp-logo-holder">
+                <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc47c1d479f24_leadiq-logo-mulesoft.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="crouser-background">
+        <div id="crouser-holder">
+            <!-- <div class="crouser" >
+                <div class="couser-img-div">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b679baa783d764f6fc80_leadiq-image-testimonial-icon.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b633c9bc20456cf9deed_leadiq-walkme-logo.svg" alt="">
+                    <h1>“Without LeadIQ, our outbound team’s workflow would be disjointed and time consuming.”</h1>
+                    <div id="signature">
+                        <div id="avatar">
+                            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b707a0940538e46fc580_leadiq-autor-image.jpg" alt="">
+                        </div>
+                        <div class="designation">
+                            <h3>Aaron Zukoski</h3>
+                            <p>Director of Business Development, <span id="green-font">WalkMe</span></p>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crouser" >
+                <div id="crouser-img-holder" class="couser-img-div">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/61682a2f2c0e6a07186d4d6d_LeadIQ-Integrations-Iterable-Quote.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b19b536e6a74f639686e9_leadiq-iterable-logo.svg" alt="">
+                    <h1>"Having prospect data is one thing, but being able to do something with that data is very important for us. LeadIQ enables us to move a lot faster."</h1>
+                    <div id="signature">
+                        <div id="avatar">
+                            <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b193c428f097cbf5483a6_leadiq-iterable-quote-avatar-david.jpg" alt="">
+                        </div>
+                        <div class="designation">
+                            <h3>David Zerwin</h3>
+                            <p>Sr. Director Sales Operations, <span id="green-font">Iterable</span></p>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crouser" >
+                <div class="couser-img-div">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/609bf5cbe627762ca111d52b_leadiq-%20clari-featured-image.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/609bf55f65fe86e64a7e5c49_leadiq-clari-logo.svg" alt="">
+                    <h1>“LeadIQ saves our sales team more than 600 hours a quarter.”</h1>
+                    <div id="signature">
+                        <div id="avatar">
+                            <img src="https://assets.website-files.com/60819f9be381394642b5659e/609bf59a4e40e8d807155e97_leadiq-clari-kyle-coleman.jpg" alt="">
+                        </div>
+                        <div class="designation">
+                            <h3>Kyle Coleman</h3>
+                            <p>VP Revenue Growth & Enablement, <span id="green-font">Clari</span></p>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="page-banner">
+        <div class="content holder">
+            <h2>
+                Your outbound teams will save so much time. Seriously.
+            </h2>
+            <a href="./bookdemo.html" class="base-btn">Book a demo</a>
+        </div>
+    </div>
+
+    <div id="book-demo-sec">
+        <div>
+            <a href="./index.html">
+                <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg" alt="">
+            </a>
+        </div>
+
+        <div class="button-holder" id="button-demo">
+            <a href="#" class="base-btn">Book a demo</a>
+            <a href="#" class="ghost-btn">Start free</a>
+        </div>
+    </div>
+    <!-- <footer>
+        <div>
+            <div>© LeadIQ, Inc. All rights reserved.</div>
+        </div>
+        <div>
+            <div>
+                <a href="https://leadiq.com/legal/privacy-policy">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://leadiq.com/legal/terms-of-use">Terms of Service</a>
+            </div>
+            <div>
+                <a href="https://leadiqhelp.zendesk.com/hc/en-us/articles/360039394534">Security</a>
+            </div>
+            <div>
+                <a href="https://leadiq.com/privacy-center">Do Not Sell My Personal Information</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="https://www.facebook.com/leadiqapp/"><img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e5452d50f1f7a3fb3_leadiq-social-media-facebook.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/leadiq"><img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4eee94984fa4071d52_leadiq-social-media-twitter.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/company/leadiq-inc/"><img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e288f5700bcb39bfd_leadiq-social-media-linkedin.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/channel/UCNb5aT5w8EIMX4QKFuFL_Yg"><img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e9e444d3a934f9719_leadiq-social-media-youtube.svg" alt=""></a>
+            </div>
+        </div>
+    </footer> -->
+    
+
+    <footer>
+            <!-- part 1 -->
+        <div id="part-1">
+            <p>© LeadIQ, Inc. All rights reserved.</p>
+        </div>
+
+
+           <!-- part-2 -->
+        <div id="part2">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security</a>
+            <a href="#">Do Not Sell My Personal Information</a>
+        </div>
+         
+        
+          <!-- part-3 -->
+        
+        <div id="part3">
+             <div>
+                <a href="#">
+                    <img class="social-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e5452d50f1f7a3fb3_leadiq-social-media-facebook.svg" alt="">
+                </a>
+             </div>
+             <div>
+                <a href="#">
+                    <img class="social-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4eee94984fa4071d52_leadiq-social-media-twitter.svg" alt="">
+                  </a>
+             </div>
+             <div>
+                <a href="#">
+                    <img class="social-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e288f5700bcb39bfd_leadiq-social-media-linkedin.svg" alt="">
+                 
+                </a>
+             </div>
+             <div>
+                <a href="#">
+                    <img class="social-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e9e444d3a934f9719_leadiq-social-media-youtube.svg" alt="">
+                </a>
+             </div>
+          
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- <script src="./scripts/features.js" type="module">       
+</script> -->
+
+<script src="./scripts/bookdemo.js"></script>
